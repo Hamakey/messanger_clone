@@ -1,18 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Welcome to Kokoa Talk</title>
-</head>
-<body>
-    <!-- Block Element Modify 에 맞춰서 Id 및 Class 구분할 것.-->
-    <div id="status-bar">
+    <head>
+        <link rel="stylesheet" href="C:\Users\user\Desktop\python\web\messanger_clone\CSS\style.css"/>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+        <title>Welcome to Kokoa Talk</title>
+    </head>
+    <body>
+        <!-- Block Element Modify 에 맞춰서 Id 및 Class 구분할 것.-->
+        <div id="status-bar">
             <div class="status-bar__column">
                 <span>No Service</span>
                 <i class="fas fa-wifi"></i>
-
-                    </path>
-                </svg>
             </div>
             <div class="status-bar__column">
                 <span>18:43</span>
@@ -24,26 +23,27 @@
                 <!-- Lightning Icon-->
                 <i class="fas fa-bolt"></i>
             </div>
-    <header class="welcome-header">
-        <h1 class="welcome-header__title">Welcome to Kokoa Clone</h1>
-        <p class="welcome-header__text">
-            If you have a Account, log in with you
-        </p>
-    </header>
-    <form>
-        <input type="text" placeholder="Email or phone number"/>
-        <input type="password" placeholder="password"/>
-        <input type="submit" placeholder="Log in"/>
-        <a href="#">Find messanger Account or password</a>
-    </form>
+        </div>
+        <header class="welcome-header">
+            <h1 class="welcome-header__title">Welcome to Kokoa Clone</h1>
+            <p class="welcome-header__text">
+                If you have a Account, log in with you
+            </p>
+        </header>
+        <form class="login-form">
+            <input class= "login-form__text" type="text" placeholder="Email or phone number"/>
+            <input class= "login-form__password" type="password" placeholder="password"/>
+            <input class= "login-form__sumbit" type="submit" placeholder="Log in"/>
+            <a href="#">Find messanger Account or password</a>
+        </form>
 
 
-    </div>
-    <!--script는 항상 마지막에 넣는다(body의 마지막에)-->
-    <script
+
+        <!--script는 항상 마지막에 넣는다(body의 마지막에)-->
+        <script
             src="https://kit.fontawesome.com/56c7f62b32.js"
             crossorigin="anonymous">
 
-    </script>
-</body>
+        </script>
+    </body>
 </html>
