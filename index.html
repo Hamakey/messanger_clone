@@ -4,7 +4,7 @@
         <link rel="stylesheet" href="C:\Users\user\Desktop\python\web\messanger_clone\CSS\style.css"/>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-        <title>Welcome to Kokoa Talk</title>
+        <title>Welcome to Messanger Talk</title>
     </head>
     <body>
         <!-- Block Element Modify 에 맞춰서 Id 및 Class 구분할 것.-->
@@ -25,14 +25,16 @@
             </div>
         </div>
         <header class="welcome-header">
-            <h1 class="welcome-header__title">Welcome to Kokoa Clone</h1>
+            <h1 class="welcome-header__title">Welcome to Messanger Clone</h1>
             <p class="welcome-header__text">
-                If you have a Account, log in with you
+                If you have a Account, log in with you.
+                If you have not, please sign in our service for using messanger.
             </p>
         </header>
-        <form class="login-form">
-            <input class= "login-form__text" type="text" placeholder="Email or phone number"/>
-            <input class= "login-form__password" type="password" placeholder="password"/>
+        <!-- non server = get 을 사용, server = post 방식-->
+        <form action="friends.html" method="get" class="login-form">
+            <input name= "username" class= "login-form__text" type="text" placeholder="Email or phone number"/>
+            <input name= "password" class= "login-form__password" type="password" placeholder="password"/>
             <input class= "login-form__sumbit" type="submit" placeholder="Log in"/>
             <a href="#">Find messanger Account or password</a>
         </form>

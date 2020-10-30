@@ -1,47 +1,12 @@
 @import "reset.css";
-@import "status-bar.css";
 @import "variables.css";
+@import "component/status-bar.css";
+@import "component/nav.css";
+@import "screens/login.css";
+
 
 body{
     font-family: 'Open Sans', sans-serif;
     <--!reset CSS 기능을 이용해서 기본으로 들어간 margin 의 top right left bottom 을 모두 0px로 바꿈-->
 }
 
-.welcome-header{
-    margin-top:90px;
-    text-align:center;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
-}
-
-.welcome-header__title{
-    margin-bottom:20px;
-    font-size:25px;
-}
-
-.welcome-header__text{
-    margin-bottom:90px;
-    width:60%;
-    opacity:0.7;
-}
-.login-form{
-    margin:10px 50px;
-    display:flex;
-    flex-direction:column;
-
-}
-.login-form input{
-    margin-botoom:20px;
-    border: none;
-    padding: 15px 0px;
-    font-size:18px;
-    border-bottom: 1px solid rgba(0, 0 ,0, 0.3);
-
-}
-.login-form input::placeholder{
-    color:rgba(0,0,0,0.3);
-}
-.login-form input:focus{
-    border-bottom-color: var(--yellow);
-}
